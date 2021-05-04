@@ -16,7 +16,7 @@ function Initialize-PSGallery {
     Param()
     $NuGetMinVersion = [System.Version]'2.8.5.201'
     $PackageManagementMinVersion = [System.Version]'1.4.4'
-    $ModuleDownloadURL = 'https://raw.githubusercontent.com/christaylorcodes/Initialize-PSGallery/main/PowerShellGetModules.zip'
+    $ModuleDownloadURL = 'https://raw.githubusercontent.com/KelvinTegelaar/Initialize-PSGallery/main/PowerShellGetModules.zip'
 
     function Register-PSGallery {
         if($Host.Version.Major -gt 4){ Register-PSRepository -Default }
